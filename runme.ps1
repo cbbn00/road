@@ -1,0 +1,1 @@
+$Result = Invoke-RestMethod -Uri "https://login.microsoftonline.com/1e3500cc-d08f-42c8-8678-ce352b7de55e/oauth2/token" -Method POST -Body @{"grant_type"="srv_challenge"} -UseBasicParsing; $Result.Nonce
